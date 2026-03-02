@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>THE LIBRARY</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/favicon/site.webmanifest">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/menus.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://use.typekit.net/rlm2rod.css">
+
+	<!-- CUSTOM ELEMENTS -->
+	<script src="js/main.js"></script>
+	<script src="js/custom/app-nav.js"></script>
+	<script src="js/custom/main-footer.js"></script>
+	<script src="js/custom/menu-main.js"></script>
+	<script src="js/custom/menu-drinks-main.js"></script>
+	<script src="js/custom/menu-happy-hour.js"></script>
+	<script src="js/custom/menu-dessert.js"></script>
+</head>
+<body>
+<header>
+	<app-nav showHome="false"></app-nav>
+</header>
+
+<main id="main">
+	<!-- ============================================ -->
+	<!--                    HERO                      -->
+	<!-- ============================================ -->
+	<section id="hero">
+		<img id="hero-logo"
+			 sizes="(max-width: 2100px) 100vw, 2100px"
+			 srcset="
+				assets/img/logo/logo-cville-blk/logo-cville-blk-lg_wfj7c7_c_scale,w_190.png 190w,
+				assets/img/logo/logo-cville-blk/logo-cville-blk-lg_wfj7c7_c_scale,w_463.png 463w,
+				assets/img/logo/logo-cville-blk/logo-cville-blk-lg_wfj7c7_c_scale,w_672.png 672w,
+				assets/img/logo/logo-cville-blk/logo-cville-blk-lg_wfj7c7_c_scale,w_844.png 844w,
+				assets/img/logo/logo-cville-blk/logo-cville-blk-lg_wfj7c7_c_scale,w_998.png 998w,
+				assets/img/logo/logo-cville-blk/logo-cville-blk-lg_wfj7c7_c_scale,w_1159.png 1159w,
+				assets/img/logo/logo-cville-blk/logo-cville-blk-lg_wfj7c7_c_scale,w_1292.png 1292w,
+				assets/img/logo/logo-cville-blk/logo-cville-blk-lg_wfj7c7_c_scale,w_1410.png 1410w,
+				assets/img/logo/logo-cville-blk/logo-cville-blk-lg_wfj7c7_c_scale,w_1537.png 1537w,
+				assets/img/logo/logo-cville-blk/logo-cville-blk-lg_wfj7c7_c_scale,w_1664.png 1664w,
+				assets/img/logo/logo-cville-blk/logo-cville-blk-lg_wfj7c7_c_scale,w_1813.png 1813w,
+				assets/img/logo/logo-cville-blk/logo-cville-blk-lg_wfj7c7_c_scale,w_2100.png 2100w"
+			 src="assets/img/logo/logo-cville-blk/logo-cville-blk-lg_wfj7c7_c_scale,w_2100.png"
+			 alt="the library collegeville logo">
+	</section>
+	<!-- ============================================ -->
+	<!--                    HOURS                     -->
+	<!-- ============================================ -->
+	<section id="hours">
+		<h1 class="page-title">HOURS</h1>
+		<h2>RESTAURANT</h2>
+		<span class="hours-day">TUESDAY - THURSDAY</span><br>
+		<span class="hours-time">11:30am - 9pm</span><br>
+		<span class="hours-day">FRIDAY, SATURDAY</span><br>
+		<span class="hours-time">11:30am - 10pm</span><br>
+		<span class="hours-day">SUNDAY</span><br>
+		<span class="hours-time">10:00am - 9pm</span><br>
+		<span class="hours-day">CLOSED MONDAY</span><br>
+		<h2>BAR</h2>
+		<span class="hours-day">TUESDAY - SUNDAY</span><br>
+		<span class="hours-time">11:30am - 11pm</span><br>
+		<span class="hours-time">(or later)</span><br>
+	</section>
+
+	<!-- ============================================ -->
+	<!--                    MENUS                     -->
+	<!-- ============================================ -->
+	<section id="menus">
+		<h1 class="page-title">MENUS</h1>
+		<div class="tabs-container">
+			<ul class="tabs-header">
+				<li class="default-tab">MAIN</li>
+				<li>DRINKS</li>
+				<li>HAPPY&nbsp;HOUR</li>
+				<li>DESSERT</li>
+			</ul>
+			<ul class="tabs">
+				<li class="tab">
+					<!-- **** -->
+					<!-- MAIN -->
+					<!-- **** -->
+					<a class="btn btn-outline-blk" href="assets/menu/menu-main.pdf">
+						<span>DOWNLOAD</span>
+					</a>
+					<menu-main></menu-main>
+				</li>
+				<li class="tab">
+					<!-- ****** -->
+					<!-- DRINKS -->
+					<!-- ****** -->
+					<a class="btn btn-outline-blk" href="assets/menu/menu-drinks.pdf">
+						<span>DOWNLOAD</span>
+					</a>
+					<menu-drinks-main></menu-drinks-main>
+				</li>
+				<li class="tab">
+					<!-- ********** -->
+					<!-- HAPPY HOUR -->
+					<!-- ********** -->
+					<a class="btn btn-outline-blk" href="assets/menu/menu-hh.pdf">
+						<span>DOWNLOAD</span>
+					</a>
+					<menu-happy-hour></menu-happy-hour>
+				</li>
+				<li class="tab">
+					<!-- ******* -->
+					<!-- DESSERT -->
+					<!-- ******* -->
+					<a class="btn btn-outline-blk" href="assets/menu/menu-dessert.pdf">
+						<span>DOWNLOAD</span>
+					</a>
+					<menu-dessert></menu-dessert>
+				</li>
+			</ul>
+		</div>
+	</section>
+</main>
+<main-footer></main-footer>
+<!--<script defer type="module" src="js/index.js"></script>-->
+<script defer type="module" src="js/menus.js"></script>
+</body>
+
+</html>
