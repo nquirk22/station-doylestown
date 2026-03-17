@@ -2,7 +2,7 @@ name: Deploy
 
 on:
     push:
-        branches: [ master ]
+        branches: [ main ]
 
 jobs:
     deploy:
@@ -23,4 +23,4 @@ jobs:
               env:
                   SSH_AUTH_SOCK: /tmp/ssh_agent.sock
               run: |
-                  scp -o StrictHostKeyChecking=no -r ./* ${{ secrets.PRODUCTION_USERNAME }}@${{ secrets.PRODUCTION_SERVER }}:/var/www/thelibrarycollegeville.com/html
+                  scp -o StrictHostKeyChecking=no -r ./* ${{ secrets.PRODUCTION_USERNAME }}@${{ secrets.PRODUCTION_SERVER }}:/var/www/thestationdoylestown.com/html
