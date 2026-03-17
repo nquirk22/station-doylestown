@@ -1,36 +1,4 @@
 /* ===GLOBAL=== */
-@import url("https://p.typekit.net/p.css?s=1&k=rlm2rod&ht=tk&f=25288.36597.36602.36604.36606.51128&a=9207449&app=typekit&e=css");
-
-@font-face {
-	font-family: "gin";
-	src: url("https://use.typekit.net/af/a20279/00000000000000007735a644/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/a20279/00000000000000007735a644/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/a20279/00000000000000007735a644/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-	font-display: auto;
-	font-style: normal;
-	font-weight: 400;
-	font-stretch: normal;
-}
-
-@font-face {
-	font-family: "p22-typewriter";
-	src: url("https://use.typekit.net/af/6cfc18/000000000000000077372206/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/6cfc18/000000000000000077372206/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/6cfc18/000000000000000077372206/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-	font-display: auto;
-	font-style: normal;
-	font-weight: 400;
-	font-stretch: normal;
-}
-
-.tk-gin {
-	font-family: "gin", serif;
-}
-
-.tk-urw-din {
-	font-family: "urw-din", sans-serif;
-}
-
-.tk-p22-typewriter {
-	font-family: "p22-typewriter", sans-serif;
-}
-
 *, *:before, *:after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -41,7 +9,7 @@ html {
 	color: #222222;
 	font-size: 1em;
 	line-height: 1.4;
-	font-family: gin, serif;
+	font-family: "barlow", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;

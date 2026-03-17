@@ -17,7 +17,7 @@ class MainFooter extends HTMLElement {
 			<footer id="footer">
 				<div id="footer-content">
 					<a href="/index.html">
-						<img id="footer-logo" loading="lazy" decoding="async" src="/assets/img/logo/books-icon-invert.svg" alt="logo">
+						<img id="footer-logo" loading="lazy" decoding="async" src="/assets/img/logo/station-train-inverted.svg" alt="logo">
 					</a>
 					<div id="footer-links">
 						<!--				<span> | </span><a href="/contact.html">CONTACT</a>-->
