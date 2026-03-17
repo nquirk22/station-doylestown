@@ -1,0 +1,261 @@
+/* ===HERO=== */
+#hero {
+	width: 100%;
+	min-height: 70vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem 0 3rem 0;
+}
+
+#hero-logo {
+	width: 80%;
+	max-width: 700px;
+	height: auto;
+	position: relative;
+}
+
+#main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ===LANDING=== */
+#landing {
+	display: none;
+	grid-template-columns: 4rem minmax(25rem, 35rem) minmax(25rem, 35rem) 4rem;
+	grid-template-rows: 30rem 40rem 35rem 35rem;
+	grid-template-areas:
+		". head head ."
+		". img1 img1 ."
+		". txt2 img2 ."
+		". img3 txt3 .";
+	width: 100%;
+	align-items: stretch;
+	justify-content: center;
+	column-gap: 6rem;
+	row-gap: 10rem;
+	margin-bottom: 10rem;
+}
+
+.landing-text {
+	margin-top: 10rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	gap: 2rem;
+	height: 50vh;
+	min-height: 800px;
+}
+
+.landing-text p {
+	font-family: garamond-premier-pro-display, serif;
+	font-size: 1.55rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin: 0;
+}
+
+.landing-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#txt2 {
+	grid-area: txt2;
+}
+
+#txt3 {
+	grid-area: txt3;
+}
+
+#landing-header {
+	grid-area: head;
+}
+
+#img1 {
+	grid-area: img1;
+}
+
+#img2 {
+	grid-area: img2;
+}
+
+#img3 {
+	grid-area: img3;
+}
+
+.section-head {
+	font-family: "rig-solid-medium-lines", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 1;
+	font-size: 2.3rem;
+}
+
+.section-head:first-letter {
+	font-family: troub, serif;
+	font-size: 2em;
+}
+
+.small {
+	display: block;
+	font-size: 1.3rem;
+	line-height: 2rem;
+}
+
+.text-num {
+	font-family: "p22-typewriter", sans-serif;
+	font-size: 2.5rem;
+	margin-top: .5rem;
+}
+
+/* ===NAV=== */
+
+/* ===SLIDER=== */
+#slider {
+	height: 35rem;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 4rem;
+}
+
+#slider-container {
+	margin: auto;
+	position: relative;
+	height: 100%;
+	width: 45vw;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+.slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	color: #222222;
+}
+
+.slider-track {
+	display: inline-flex;
+	flex-direction: row;
+	gap: 16px;
+	margin: 0;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+.slide {
+	width: 35vw;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+.slider-btn {
+	position: absolute;
+	height: 100%;
+	width: 8vw;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 150ms ease-in;
+}
+
+.slider-btn:hover {
+	opacity: 1;
+}
+
+#slider-btn-left {
+	background-image: linear-gradient(to left, rgba(55, 55, 55, 0), rgba(55, 55, 55, .4));
+	left: 0;
+}
+
+#slider-btn-right {
+	background-image: linear-gradient(to right, rgba(55, 55, 55, 0), rgba(55, 55, 55, .4));
+	right: 0;
+}
+
+/* ===MEDIA=== */
+/*Medium devices*/
+@media only screen and (max-width: 1900px) {
+
+	#slider {
+		height: 35rem;
+	}
+
+	#slider-container {
+		width: 48rem;
+	}
+
+	.slide {
+		width: 40rem;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+
+	#landing {
+		display: none;
+		grid-template-columns: 1px minmax(15rem, 35rem) minmax(15rem, 35rem) 1px;
+		grid-template-rows: 30rem 40rem 35rem 35rem;
+		grid-template-areas:
+		". head head ."
+		". img1 img1 ."
+		". txt2 img2 ."
+		". img3 txt3 .";
+		width: 100%;
+		align-items: stretch;
+		justify-content: center;
+		column-gap: 4rem;
+		margin-bottom: 10rem;
+	}
+}
+
+/*Small devices*/
+@media only screen and (max-width: 768px) {
+
+	#landing {
+		display: none;
+		grid-template-columns: auto 90vw auto;
+		grid-template-rows: auto;
+		grid-template-areas:
+		". head ."
+		". img1 ."
+		". txt2 ."
+		". img2 ."
+		". img3 ."
+		". txt3 .";
+		width: 100%;
+		align-items: stretch;
+		justify-content: center;
+		gap: 6rem;
+		margin-bottom: 10rem;
+	}
+
+	#slider {
+		height: 15rem;
+	}
+
+	#slider-container {
+		width: 100%;
+	}
+
+	.slide {
+		width: 85vw;
+	}
+
+}
+

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Antica - Menus</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/contact.css">
+	<link rel="stylesheet" href="https://use.typekit.net/hrr0idk.css">
+</head>
+<body>
+
+<header>
+	<!-- ============================================ -->
+	<!--                   NAVIGATION                 -->
+	<!-- ============================================ -->
+
+	<!-- Nav Strip -->
+	<nav id="top-nav" aria-label="main-navigation-desktop">
+		<img id="top-logo" src="assets/img/antica-cap-a-white.png" alt="antica-logo">
+		<!-- Hamburger Button -->
+		<div aria-label="menu" id="menu-btn" onclick="toggleNav()"></div>
+	</nav>
+
+	<nav id="mobile-nav" aria-label="main-navigation-mobile">
+		<a id="mobile-nav-logo" href="/index-basic.html">
+			<img aria-hidden="true" decoding="async" src="assets/img/antica.png" alt="Antica logo">
+		</a>
+		<ul class="nav-items">
+			<li class="nav-li"><a id="active-menu" href="index-basic.html">Home</a></li>
+			<li class="nav-li"><a class="link" href="/menus.html">About</a></li>
+			<li class="nav-li"><a class="link" href="index-basic.html#services">Services</a></li>
+			<li class="nav-li"><a class="link" href="/contact.html">Contact</a></li>
+		</ul>
+		<div><p>Antica Restaurant</p></div>
+	</nav>
+</header>
+
+<h1>CONTACT!</h1>
+<h1>LOCATION!</h1>
+<div class="card">
+	<form id="form-contact">
+		<div class="flex-container">
+			<!-- LEFT COLUMN -->
+			<div id="form-column-left">
+				<!-- EMAIL -->
+				<div class="form-group">
+					<input id="email"
+						   class="form-field"
+						   name="senderEmail"
+						   data-placeholder="name@address.com"
+						   required
+						   title="Enter a valid email address"
+						   type="email"
+						   pattern="^(([^<>()[\]\\.,;:\s@\x22]+(\.[^<>()[\]\\.,;:\s@\x22]+)*)|(\x22.+\x22))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$"
+						   value=""/>
+					<label class="form-label" for="email">Email*</label>
+					<p class="form-error"></p>
+				</div>
+				<!-- NAME -->
+				<div class="form-group">
+					<input id="full-name"
+						   class="form-field"
+						   name="senderName"
+						   data-placeholder="John Doe"
+						   title="Enter your name"
+						   type="text"
+						   value=""
+						   required/>
+					<label class="form-label" for="full-name">Name*</label>
+					<p class="form-error"></p>
+				</div>
+				<!-- TYPE -->
+				<div class="form-group">
+					<select id="event-type"
+							class="form-field"
+							title="What kind of gathering are you planning?"
+							required
+							name="eventType">
+						<option value=""></option>
+						<option value="Engagement">Engagement</option>
+						<option value="Wedding">Wedding</option>
+						<option value="Anniversary">Anniversary</option>
+						<option value="Birthday">Birthday</option>
+						<option value="Corporate">Corporate</option>
+						<option value="Baptism|Communion|Bar/Bat Mitzvah">Baptism|Communion|Bar/Bat Mitzvah</option>
+						<option value="Holiday">Holiday</option>
+						<option value="Other">Other</option>
+					</select>
+					<label class="form-label" for="event-type">Nature of Event*</label>
+					<p class="form-error"></p>
+				</div>
+				<!-- GUEST -->
+				<div class="form-group">
+					<input id="guests"
+						   class="form-field"
+						   name="guests"
+						   data-placeholder="(A &#8220guest-imate&#8221 is ok)"
+						   title="Approximate number of guests in your party"
+						   type="number"
+						   min="2"
+						   max="400"
+						   value=""
+						   required/>
+					<label class="form-label" for="guests">Guests*</label>
+					<p class="form-error"></p>
+				</div>
+				<!-- DATE -->
+				<div class="form-group">
+					<input id="event-date"
+						   class="form-field"
+						   name="inquireDate"
+						   type="date"
+						   placeholder=""
+						   required/>
+					<label class="form-label" for="event-date">Choose a date*</label>
+					<p class="form-error"></p>
+				</div>
+			</div>
+			<!-- RIGHT COLUMN -->
+			<div id="form-column-right">
+				<!-- PHONE -->
+				<div class="form-group">
+					<input id="phone"
+						   class="form-field"
+						   name="senderPhone"
+						   data-placeholder="1234567890 or 123-456-7890"
+						   title="Enter your phone number"
+						   type="tel"
+						   pattern="^(\d{3})?[-|.]?\d{3}[-|.]?\d{4}$"
+						   value=""/>
+					<label class="form-label" for="phone">Phone Number (optional)</label>
+					<p class="form-error"></p>
+				</div>
+				<!-- TEXT -->
+				<div class="form-group">
+					<textarea id="comment"
+							  class="form-field"
+							  name="text"
+							  cols="40"
+							  data-placeholder="Tell us about your event. (500 character max)"
+							  rows="10"></textarea>
+					<label class="form-label" for="comment">Comments (optional)</label>
+					<p class="form-error"></p>
+				</div>
+			</div>
+		</div>
+		<button id="sendBtn" type="button" class="btn-flat" onclick="onSubmit()" disabled>Submit</button>
+	</form>
+	<dialog id="dialog-contact-submit">
+		<div class="dialog-content">
+			<div id="dialog-contact-text" class="dialog-text"></div>
+			<button class="flat" onclick="dialogDismiss()">OK</button>
+		</div>
+	</dialog>
+</div>
+
+<!-- ============================================ -->
+<!--                     FOOTER                   -->
+<!-- ============================================ -->
+
+<footer id="footer">
+	<div class="flex-container">
+		<div class="left-section">
+			<a class="logo" href="/index-basic.html"><img loading="lazy" decoding="async" src="/images/logo-white.svg"
+                                                          alt="logo" width="293" height="91"></a>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus mollitia sequi placeat dignissimos
+				adipisci explicabo excepturi a beatae architecto autem.
+			</p>
+		</div>
+		<div class="right-section">
+			<div class="lists">
+				<ul>
+					<li><h2>Company</h2></li>
+					<li><a href="/index-basic.html">Home</a></li>
+					<li><a href="/contact.html">Services</a></li>
+				</ul>
+				<ul>
+					<li><h2>Support</h2></li>
+					<li><a href="/contact.html">Contact Us</a></li>
+				</ul>
+				<ul>
+					<li><h2>Get in Touch</h2></li>
+					<li><img loading="lazy" decoding="async" src="/images/pin.svg" alt="" width="24" height="24"><a
+						href="" target="_blank">Somewhere, Tx</a></li>
+					<li><img loading="lazy" decoding="async" src="/images/footer-phone.svg" alt="" width="24"
+							 height="24"><a href="tel:555-213-9120">(555) 213-9120</a></li>
+					<li><img loading="lazy" decoding="async" src="/images/email.svg" alt="" width="24" height="24"><a
+						href="mailto:info@email.com">info@email.com</a></li>
+				</ul>
+			</div>
+
+			<div class="buttons">
+				<a class="button-solid" href="/contact.html">
+					Call to action button
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script defer src="js/main.js"></script>
+<script defer src="js/contact.js"></script>
+
+</body>
+</html>
