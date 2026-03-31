@@ -1,4 +1,9 @@
 /* ===HERO=== */
+.grand-opening {
+	text-align: center;
+	padding: 0 1rem;
+}
+
 #hero {
 	width: 100%;
 	min-height: 70vh;
@@ -10,7 +15,7 @@
 	padding: 3rem 0 3rem 0;
 }
 
-#hero-logo {
+#heroLogo {
 	width: 80%;
 	max-width: 700px;
 	height: auto;
@@ -221,6 +226,17 @@
 		justify-content: center;
 		column-gap: 4rem;
 		margin-bottom: 10rem;
+	}
+}
+
+/*Large devices*/
+@media only screen and (min-width: 1901px) {
+	#hero {
+		min-height: 80vh;
+	}
+
+	#heroLogo {
+		max-width: 900px;
 	}
 }
 
