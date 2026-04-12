@@ -1,0 +1,164 @@
+class MenuAllDay extends HTMLElement {
+	constructor() {
+		super();
+	}
+
+	connectedCallback() {
+		this.innerHTML = allDayMenuContent;
+	}
+}
+
+customElements.define("menu-allday", MenuAllDay)
+
+//language=HTML
+const allDayMenuContent = `
+	<div class="flex-container">
+		<div class="menu-column">
+            <h3 class="menu-header">SALADS</h3>
+
+            <h4>HOUSE SALAD<span>$11</span></h4>
+            <p>CRISP ICEBERG, ROMAINE, ARUGULA, RADICCHIO, ALMONDS CROUTONS, TOMATO, GORGONZOLA, HONEY-RED WINE VINAIGRETTE</p>
+
+            <h4>GRILLED ROMAINE WEDGE<span>$12</span></h4>
+            <p>CRUMBLED GORGONZOLA, CHERRY TOMATO, CANDIED WALNUT, CRISPY PORK PANCETTA, BALSAMIC VINAIGRETTE</p>
+
+            <h4>CAESAR SALAD<span>$12</span></h4>
+            <p>FRESH ROMAINE LETTUCE, TOMATO, SHAVED PARMESAN, CROUTONS, HOMEMADE DRESSING</p>
+
+            <h4>ASIAN NOODLE SALAD<span>$14</span></h4>
+            <p>PICKLED CUCUMBER, CARROT, RADISH, CHARRED CORN, EDAMAME, UDON SESAME NOODLES, CILANTRO, SWEET SOY DRIZZLE</p>
+
+            <h3 class="menu-header">SMALL BITES</h3>
+            <h4>FIG RICOTTA CROSTINI<span>$14</span></h4>
+            <p>CARAMELIZED FIGS, RICOTTA, MINT, HOT HONEY</p>
+
+            <h4>SHORT RIB EGGROLL<span>$14</span></h4>
+            <p>TENDER BRAISED BEEF, AGED WHITE CHEDDAR CHEESE, CARAMELIZED ONION, HORSERADISH MUSTARD SAUCE</p>
+
+            <h4>BEEF CARPACCIO<span>$18</span></h4>
+            <p>TARTARE GARNISH, SLICED FILET MIGNON, ARUGULA, PICKLED RED ONION, EGG YOLK CRUMBLE, FRIED CAPERS, GRAIN MUSTARD AIOLI, CROSTINI</p>
+
+            <h4>HOMEMADE HUMMUS PLATTER<span>$18</span></h4>
+            <p>CHICKPEA HUMMUS, EGGPLANT-PEPPER RATATOUILLE, ROASTED RED PEPPER HUMMUS, GRILLED FOCACCIA</p>
+
+            <h4>CHICKEN WINGS (6)<span>$12</span></h4>
+            <p>OVEN-ROASTED CHICKEN WINGS, CARROT, CELERY, BLUE CHEESE YOUR CHOICE OF BUFFALO, HOT HONEY OR GARLIC PARMESAN</p>
+
+            <h4>SHRIMP AVOCADO STACK<span>$18</span></h4>
+            <p>CHILLED POACHED SHRIMP, CUCUMBER, AVOCADO, TOBIKO, SWEET SOY, SESAME, CRISPY RICE CAKE, SRIRACHA AIOLI</p>
+
+            <h4>HOMEMADE FOCACCIA<span>$7</span></h4>
+            <p>FRESH HERB FOCACCIA, GARLIC-PARMESAN OLIVE OIL</p>
+
+            <h4>ARANCINI<span>$12</span></h4>
+            <p>ARBORIO RICE BALLS, BROCCOLI RABE, SWEET ITALIAN SAUSAGE, PARMESAN, MOZZARELLA, TOMATO BASIL SAUCE</p>
+
+            <h4>CRISPY CALAMARI<span>$16</span></h4>
+            <p>FRIED CALAMARI SERVED WITH CHERRY HOT PEPPER,CHIPOTLE AIOLI, SIDE OF MARINARA AND FRESH LEMON</p>
+
+            <h4>CRISPY SHRIMP TACO (3)<span>$16</span></h4>
+            <p>CORN TORTILLAS, FRIED SHRIMP, COLESLAW, CHIPOTLE AIOLI</p>
+
+            <h3 class="menu-header">HANDHELDS</h3>
+            <h4>CHICKEN SCHNITTY<span>$18</span></h4>
+            <p>CIABATTA ROLL, CHICKEN CUTLET, SHAVED PARMESAN, ARUGULA, MUSTARD AIOLI, SLICED TOMATO, HOUSE FRIES</p>
+
+            <h4>PESTO GRILLED CHICKEN<span>$18</span></h4>
+            <p>GRILLED CHICKEN BREAST, CIABATTA ROLL, TOMATO, ARUGULA, BASIL PESTO, HOUSE FRIES</p>
+
+            <h4>SINGLE SMASH<span>$15</span></h4>
+            <p>4OZ. BEEF PATTY, TOASTED BRIOCHE BUN, CHEDDAR CHEESE, LETTUCE, TOMATO, RED ONION, HOUSE FRIES</p>
+
+            <h4>STATION SMASH<span>$19</span></h4>
+            <p>2-4OZ. BEEF PATTIES, TOASTED BRIOCHE BUN, BACON, CARAMELIZED ONION, CHEDDAR CHEESE, HOUSE FRIES</p>
+
+            <h4>SHORT RIB GRILLED CHEESE & TOMATO BASIL BISQUE<span>$18</span></h4>
+            <p>WHOLE GRAIN SOURDOUGH, CHEDDAR CHEESE, BEEF SHORT RIB, CUP OF ROASTED TOMATO BASIL BISQUE</p>
+
+            <h4>NASHVILLE HOT CHICKEN<span>$19</span></h4>
+            <p>TOASTED BRIOCHE BUN, PIMENTO CHEESE, CAJUN AIOLI, PICKLES, LETTUCE, HOUSE FRIES</p>
+
+            <h4>SHORT RIB TACO (3)<span>$18</span></h4>
+            <p>CORN TORTILLAS, PULLED SHORT RIB, CHEDDAR CHEESE,FRESH CORN-POBLANO RELISH, AVOCADO CREMA, CILANTRO</p>
+
+            <h4>THE STATION FRIES<span>$14</span></h4>
+            <p>BRAISED SHORT RIB GRAVY, CHEDDAR CHEESE CURD, STEAK FRIES</p>
+
+            <h4>FIG RICOTTA CROSTINI<span>$14</span></h4>
+            <p>CARAMELIZED FIGS, RICOTTA, MINT, HOT HONEY</p>
+
+            <h4><span>$2</span>></h4>
+            <p>SPICY MARYLAND CRAB DIPCREAMY CRAB DIP, DICED PEPPER, OLD BAY, WONTON CHIPS</p>
+
+            <h4>SHORT RIB FLATBREAD<span>$20</span></h4>
+            <p>CARAMELIZED ONION, LEMON PARSLEY GREMOLATA, BLUE CHEESE, HORSERADISH AIOLI</p>
+
+            <h4>CRISPY EGGPLANT CHIPS<span>$12</span></h4>
+            <p>THIN SLICED EGGPLANT, KALAMATA OLIVE TAPENADE, ANCHOVY AIOLI</p>
+
+            <h4>MARGARITA FLATBREAD<span>$16</span></h4>
+            <p>MOZZARELLA, POMODORO, EVOO, FRESH BASIL</p>
+
+            <h3 class="menu-header">BIG PLATES</h3>
+
+            <h4>PASTA BOLOGNESE<span>$24</span></h4>
+            <p>SAVORY GROUND BEEF, TOMATO CREAM SAUCE, LINGUINE PASTA</p>
+
+            <h4>CHICKEN SCHNITZEL<span>$24</span></h4>
+            <p>CHICKEN CUTLET, MUSTARD AIOLI, HERBED SPAETZLE, ARUGULA SALAD, PARMESAN, CRISPY CAPERS</p>
+
+            <h4>CHICKEN PARMIGIANA<span>$23</span></h4>
+            <p>CHICKEN BREAST CUTLET, MARINARA SAUCE, MOZZARELLA, LINGUINE</p>
+
+            <h4>FISH FRANCESE<span>$31</span></h4>
+            <p>LIGHTLY BATTERED WHITE FISH FILLET, JUMBO LUMP CRABMEAT, LINGUINE, LEMON, SPINACH, WHITE WINE SAUCE</p>
+
+            <h4>SHRIMP & GRITS<span>$27</span></h4>
+            <p>ANDOUILLE SAUSAGE GRAVY, BACON, CARAMELIZED RED ONION, RED & GREEN BELL PEPPER, GRITS</p>
+
+            <h4>JAMBALAYA<span>$24</span></h4>
+            <p>SLICED CHICKEN BREAST, ANDOUILLE SAUSAGE, ARBORIO RICE, CAJUN TOMATO CREAM SAUCE</p>
+
+            <h4>STEAK FRITES<span>$38</span></h4>
+            <p>12 OZ. GRILLED NY STRIP STEAK, GARLIC-HERB BUTTER, HOUSE PARMESAN TRUFFLE FRIES</p>
+
+            <h4>BRAISED SHORT RIB<span>$34</span></h4>
+            <p>RED WINE BRAISED BEEF, PARMESAN GRITS, ONION RINGS, CHARRED BROCCOLINI, LEMON PARSLEY GREMOLATA</p>
+
+            <h4>KOREAN BBQ SALMON<span>$29</span></h4>
+            <p>PAN-SEARED SALMON, COLD SESAME NOODLES, CHARRED BROCCOLINI, PICKLED CUCUMBER, SWEET SOY REDUCTION</p>
+
+            <h4>COWBOY PORK CHOP<span>$33</span></h4>
+            <p>14 OZ CENTER CUT CHOP, MUSHROOM RISOTTO, CHARRED BROCOLINI, NDUJA WHISKEY BUTTER SAUCE</p>
+
+            <h4>THE LIBRARY CHICKEN<span>$26</span></h4>
+            <p>HERB ROASTED AIRLINE CHICKEN BREAST, CHERRY TOMATO & SPINACH RISOTTO, CALABRIAN CHILI CREAM SAUCE</p>
+
+            <h4>SPICY SAUSAGE RIGATONI<span>$24</span></h4>
+            <p>GROUND SPICY SAUSAGE, VODKA CREAM, PARMESAN, MEZZI RIGATONI PASTA</p>
+
+            <h3 class="menu-header">SIDES</h3>
+            <h4>TRUFFLE FRIES<span>$9</span></h4>
+            <p>PARMESAN TRUFFLE FRIES</p>
+
+            <h4>BROCCOLINI<span>$12</span></h4>
+            <p>CHARRED BROCCOLINI, GARLIC, EVOO, SEASONED BREAD CRUMBS</p>
+
+            <h4>HERBED SPAETZLE<span>$8</span></h4>
+            <p>SAUTEED GERMAN STYLE PASTA</p>
+
+            <h4>CHEDDAR GRITS<span>$10</span></h4>
+            <p>WHITE CHEDDAR GRITS, SCALLION</p>
+
+            <h4>BRUSSELS SPROUTS<span>$8</span></h4>
+            <p>CARAMELIZED ONION, BACON, SPICY PORK NDUJA, WHISKEY BUTTER SAUCE</p>
+
+            <h4>PASTA MARINARA<span>$9</span></h4>
+            <p>YOUR CHOICE OF MEZZI RIGATONI, LINGUINE OR GLUTEN-FRIENDLY PENNE</p>
+
+
+        </div>
+	</div>
+`;
+
+
