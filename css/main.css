@@ -26,8 +26,7 @@ body {
 	color: #222;
 	justify-content: space-between;
 	width: 100%;
-	/*TODO: uncomment this when you're sure nothing is overflowing*/
-	/*overflow-x: hidden;*/
+	overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
