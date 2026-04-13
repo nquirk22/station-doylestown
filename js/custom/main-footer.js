@@ -25,22 +25,13 @@ class MainFooter extends HTMLElement {
 					</div>
 					<div id="footer-contact">
 						<p>
-							<a href="${ this.userMapLink }">217 E. Main Street<br>Collegeville, PA 19426</a><br>
+							<a href="${ this.userMapLink }">194 W. Ashland Street<br>Doylestown, PA 18901</a><br>
 						</p>
 						<p>
-							<a href="tel:+14849736622">484.973.6622</a>
+							<a href="tel:+14849736622">215.348.1663</a>
 						</p>
 					</div>
 					<div id="badgeContainer">
-						<div>
-							<div id="circle_v12_wrap" style="width:calc(150px * 0.75);height:calc(134px * 0.75)">
-								<div id="circle_v12" tabindex="0">
-									<div id="circletype_v12_brand_name" class="autoFontSize">
-										<a href='https://www.restaurantji.com/pa/collegeville/the-library-/' class="ahref_emprty_area" style="font-size:calc(12px * 0.75);">The Library</a>
-									</div>
-									<a href="https://www.restaurantji.com" id="rewards_link">Restaurantji</a></div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</footer>
