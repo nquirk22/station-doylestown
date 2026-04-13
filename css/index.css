@@ -1,5 +1,6 @@
 /* ===HERO=== */
 .grand-opening {
+    font-family: "rig-solid-bold-inline-solo", sans-serif;
 	text-align: center;
 	padding: 0 1rem;
 }
@@ -24,19 +25,6 @@
 
 hotfx-split-flap {
     font-size: 1.5rem;
-}
-
-@media (min-width: 1000px) {
-    hotfx-split-flap {
-        font-size: 1.5rem;
-    }
-}
-
-#hot-0bf6e#hot-0bf6e#hot-0bf6e {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5em;
 }
 
 #main {
@@ -197,25 +185,6 @@ hotfx-split-flap {
 	right: 0;
 }
 
-@media only screen and (max-width: 1200px) {
-
-	#landing {
-		display: none;
-		grid-template-columns: 1px minmax(15rem, 35rem) minmax(15rem, 35rem) 1px;
-		grid-template-rows: 30rem 40rem 35rem 35rem;
-		grid-template-areas:
-		". head head ."
-		". img1 img1 ."
-		". txt2 img2 ."
-		". img3 txt3 .";
-		width: 100%;
-		align-items: stretch;
-		justify-content: center;
-		column-gap: 4rem;
-		margin-bottom: 10rem;
-	}
-}
-
 /* ===MEDIA=== */
 /*Large devices*/
 @media only screen and (min-width: 1901px) {
@@ -230,6 +199,9 @@ hotfx-split-flap {
 
 /*Medium devices*/
 @media only screen and (max-width: 1900px) {
+    hotfx-split-flap {
+        font-size: 1.2rem;
+    }
 
     #slider {
         height: 35rem;
@@ -246,6 +218,14 @@ hotfx-split-flap {
 
 /*Small devices*/
 @media only screen and (max-width: 768px) {
+
+    hotfx-split-flap {
+        font-size: 1.0rem;
+    }
+
+    .grand-opening {
+        font-size: 1.2rem;
+    }
 
 	#landing {
 		display: none;
