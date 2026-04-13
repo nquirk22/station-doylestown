@@ -139,7 +139,7 @@ const agentInfo = function () {
             break;
     }
 
-    const appleAddress = `https://maps.apple.com/?address=217%20E%20Main%20St,%20Collegeville,%20PA%20%2019426,%20United%20States&auid=5044690996677744910&ll=40.185850,-75.450847&lsp=9902&q=The%20Library%20Collegeville&t=m`;
+    const appleAddress = `https://maps.apple/p/BJANirW2WdSJAI`;
     const googleAddress = 'https://www.google.com/maps/search/?api=1&query=40.30583140951905,-75.1315294793434&query_place_id=ChIJAUefLE2pxokRg5-8jZXzvZM';
 
 
