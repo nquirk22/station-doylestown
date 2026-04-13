@@ -24,10 +24,10 @@
     <script src="js/main.js"></script>
     <script src="js/custom/app-nav.js"></script>
     <script src="js/custom/main-footer.js"></script>
-    <script src="js/custom/menu-main.js"></script>
-    <script src="js/custom/menu-drinks-main.js"></script>
-    <script src="js/custom/menu-happy-hour.js"></script>
-    <script src="js/custom/menu-dessert.js"></script>
+    <script src="js/custom/menu-allday.js"></script>
+    <script src="js/custom/menu-brunch.js"></script>
+    <script src="js/custom/menu-drinks.js"></script>
+    <script src="js/custom/split-flap.js"></script>
 </head>
 
 <body>
@@ -42,43 +42,72 @@
     <section id="hero">
         <!--@formatter:off-->
         <img id="heroLogo"
-            sizes="(max-width: 2170px) 100vw, 2170px"
-            srcset="
-                assets/img/logo/hero/logo-station-lg_xg8do5_c_scale,w_190.png,
-                assets/img/logo/hero/logo-station-lg_xg8do5_c_scale,w_577.png 577w,
-                assets/img/logo/hero/logo-station-lg_xg8do5_c_scale,w_853.png 853w,
-                assets/img/logo/hero/logo-station-lg_xg8do5_c_scale,w_1079.png 1079w,
-                assets/img/logo/hero/logo-station-lg_xg8do5_c_scale,w_1288.png 1288w,
-                assets/img/logo/hero/logo-station-lg_xg8do5_c_scale,w_1482.png 1482w,
-                assets/img/logo/hero/logo-station-lg_xg8do5_c_scale,w_1665.png 1665w,
-                assets/img/logo/hero/logo-station-lg_xg8do5_c_scale,w_2170.png 2170w"
-            src="assets/img/logo/hero/logo-station-lg_xg8do5_c_scale,w_2170.png"
-            alt="the-station-restaurant-logo"
-        />
+                sizes="(max-width: 960px) 100vw, 960px"
+                srcset="
+                    assets/img/logo/hero/logo-station-lg_kliitg_c_scale,w_190.png 190w,
+                    assets/img/logo/hero/logo-station-lg_kliitg_c_scale,w_339.png 339w,
+                    assets/img/logo/hero/logo-station-lg_kliitg_c_scale,w_459.png 459w,
+                    assets/img/logo/hero/logo-station-lg_kliitg_c_scale,w_561.png 561w,
+                    assets/img/logo/hero/logo-station-lg_kliitg_c_scale,w_649.png 649w,
+                    assets/img/logo/hero/logo-station-lg_kliitg_c_scale,w_744.png 744w,
+                    assets/img/logo/hero/logo-station-lg_kliitg_c_scale,w_960.png 960w"
+                src="logo-station-lg_kliitg_c_scale,w_960.png"
+                alt="logo of the station restaurant">
         <!--@formatter:on-->
-        <h1 class="grand-opening">THE STATION OPENS THURSDAY, APRIL 2nd</h1>
-        <h2 class="grand-opening">SERVING DINNER ONLY THROUGH APRIL 12th, LUNCH SERVICE BEGINS APRIL 14th</h2>
-        <h2 class="grand-opening">CLOSED MONDAYS</h2>
+        <!-- ============================================ -->
+        <!--                    HOURS                     -->
+        <!-- ============================================ -->
+        <hotfx-split-flap height="1" width="20" duration="165" id="hot-0bf6e">THE STATION IS OPEN!</hotfx-split-flap>
+        <h2 class="grand-opening">NOW SERVING LUNCH<br/>CLOSED MONDAYS</h2>
     </section>
+
+
     <!-- ============================================ -->
-    <!--                    HOURS                     -->
+    <!--                    MENUS                     -->
     <!-- ============================================ -->
-    <!--    <section id="hours">-->
-    <!--        <h1 class="page-title">HOURS</h1>-->
-    <!--        <h2>RESTAURANT</h2>-->
-    <!--        <span class="hours-day">TUESDAY - THURSDAY</span><br>-->
-    <!--        <span class="hours-time">11:30am - 9pm</span><br>-->
-    <!--        <span class="hours-day">FRIDAY, SATURDAY</span><br>-->
-    <!--        <span class="hours-time">11:30am - 10pm</span><br>-->
-    <!--        <span class="hours-day">SUNDAY</span><br>-->
-    <!--        <span class="hours-time">10:00am - 9pm</span><br>-->
-    <!--        <span class="hours-day">CLOSED MONDAY</span><br>-->
-    <!--        <h2>BAR</h2>-->
-    <!--        <span class="hours-day">TUESDAY - SUNDAY</span><br>-->
-    <!--        <span class="hours-time">11:30am - 11pm</span><br>-->
-    <!--        <span class="hours-time">(or later)</span><br>-->
-    <!--    </section>-->
+    <section id="menus">
+        <h1 class="page-title">MENUS</h1>
+        <div class="tabs-container">
+            <ul class="tabs-header">
+                <li class="default-tab">ALL-DAY</li>
+                <li>DRINKS</li>
+<!--                <li>BRUNCH</li>-->
+            </ul>
+            <ul class="tabs">
+                <li class="tab">
+                    <!-- **** -->
+                    <!-- ALL DAY -->
+                    <!-- **** -->
+                    <a class="btn btn-outline-blk" href="assets/menu/menu-allday.pdf">
+                        <span>DOWNLOAD</span>
+                    </a>
+                    <menu-allday></menu-allday>
+                </li>
+                <li class="tab">
+                    <!-- ****** -->
+                    <!-- DRINKS -->
+                    <!-- ****** -->
+                    <a class="btn btn-outline-blk" href="assets/menu/menu-drinks.pdf">
+                        <span>DOWNLOAD</span>
+                    </a>
+                    <menu-drinks></menu-drinks>
+                </li>
+<!--                <li class="tab">-->
+<!--                    &lt;!&ndash; ******* &ndash;&gt;-->
+<!--                    &lt;!&ndash; BRUNCH &ndash;&gt;-->
+<!--                    &lt;!&ndash; ******* &ndash;&gt;-->
+<!--                    <a class="btn btn-outline-blk" href="assets/menu/menu-brunch.pdf">-->
+<!--                        <span>DOWNLOAD</span>-->
+<!--                    </a>-->
+<!--                    <menu-brunch></menu-brunch>-->
+<!--                </li>-->
+            </ul>
+        </div>
+    </section>
 </main>
+<main-footer></main-footer>
+<!--<script defer type="module" src="js/index.js"></script>-->
+<script defer type="module" src="js/menus.js"></script>
 </body>
 
 </html>

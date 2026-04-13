@@ -140,7 +140,10 @@ const agentInfo = function () {
     }
 
     const appleAddress = `https://maps.apple.com/?address=217%20E%20Main%20St,%20Collegeville,%20PA%20%2019426,%20United%20States&auid=5044690996677744910&ll=40.185850,-75.450847&lsp=9902&q=The%20Library%20Collegeville&t=m`;
-    const googleAddress = 'https://www.google.com/maps/search/?api=1&query=40.18578447875828,-75.4507133572706&query_place_id=ChIJTX__QQCRxokRd_NGpD4Wg9w';
+    const googleAddress = 'https://www.google.com/maps/search/?api=1&query=40.30583140951905,-75.1315294793434&query_place_id=ChIJAUefLE2pxokRg5-8jZXzvZM';
+
+
+    // const googleAddress = 'https://maps.app.goo.gl/1Aidqo7xcaQ4b1aH9';
     return {
         screen: screenSize,
         browser: browser,
