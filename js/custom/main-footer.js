@@ -28,7 +28,7 @@ class MainFooter extends HTMLElement {
 							<a href="${ this.userMapLink }">194 W. Ashland Street<br>Doylestown, PA 18901</a><br>
 						</p>
 						<p>
-							<a href="tel:+14849736622">215.348.1663</a>
+							<a href="tel:+12153481663">215.348.1663</a>
 						</p>
 					</div>
 					<div id="badgeContainer">
