@@ -8,7 +8,7 @@ class MenuAllDay extends HTMLElement {
 	}
 }
 
-customElements.define("menu-allday", MenuAllDay)
+customElements.define("menu-allday", MenuAllDay);
 
 //language=HTML
 const allDayMenuContent = `

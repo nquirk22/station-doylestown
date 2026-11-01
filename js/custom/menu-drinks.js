@@ -8,7 +8,7 @@ class MenuDrinks extends HTMLElement {
 	}
 }
 
-customElements.define("menu-drinks", MenuDrinks)
+customElements.define("menu-drinks", MenuDrinks);
 
 //language=HTML
 const drinksMenuContent = `
@@ -17,69 +17,69 @@ const drinksMenuContent = `
             <div class="menu-section">
                 <!-- WHITE WINE -->
                 <h3 class="menu-header">WHITE WINE</h3>
-                <H4>CHARDONNAY-CARDIFF<SPAN>$11/40</SPAN></H4>
-                <P>(CA) TROPICAL CITRUS, COMPLEX, TOASTY VANILLA, BALANCED, BUTTERY FINISH</P>
+                <h4>CHARDONNAY-CARDIFF<span>$11/40</span></h4>
+                <p>(CA) TROPICAL CITRUS, COMPLEX, TOASTY VANILLA, BALANCED, BUTTERY FINISH</p>
 
-                <H4>CHARD-TOAD HOLLOW<SPAN>$13/45</SPAN></H4>
-                <P>(CA) UNOAKED, PEAR, APPLE, GINGER, ORANGE BLOSSOM, EXPANSIVE, CREAMY & CRISP</P>
+                <h4>CHARD-TOAD HOLLOW<span>$13/45</span></h4>
+                <p>(CA) UNOAKED, PEAR, APPLE, GINGER, ORANGE BLOSSOM, EXPANSIVE, CREAMY & CRISP</p>
 
-                <H4>MOSCATO-STELLA <SPAN>$11/40</SPAN></H4>
-                <P>(IT) SWEET AND AROMATIC, RIPE PEACHES, ORANGE BLOSSOM, GENTLE EFFERVESCENCE</P>
+                <h4>MOSCATO-STELLA <span>$11/40</span></h4>
+                <p>(IT) SWEET AND AROMATIC, RIPE PEACHES, ORANGE BLOSSOM, GENTLE EFFERVESCENCE</p>
 
-                <H4>PINOT GRIGIO-BANFI<SPAN>$14/50</SPAN></H4>
-                <P>(IT) “SAN ANGELO” NOTES OF PEAR, PEACH, ANISE AND HONEY, FRUITY, CRISP, VERY REFRESHING</P>
+                <h4>PINOT GRIGIO-BANFI<span>$14/50</span></h4>
+                <p>(IT) “SAN ANGELO” NOTES OF PEAR, PEACH, ANISE AND HONEY, FRUITY, CRISP, VERY REFRESHING</p>
 
-                <H4>PINOT GRIGIO-SPINELLI<SPAN>$11/40</SPAN></H4>
-                <P>(IT) FRUITY NOSE, FLORAL NOTES, RIPE MELON, LEMON, WELL-BALANCED AND CRISP</P>
+                <h4>PINOT GRIGIO-SPINELLI<span>$11/40</span></h4>
+                <p>(IT) FRUITY NOSE, FLORAL NOTES, RIPE MELON, LEMON, WELL-BALANCED AND CRISP</p>
 
-                <H4>RIESLING-SALMON RUN<SPAN>$12/44</SPAN></H4>
-                <P>(NY) REFRESHING, STONE FRUITS, HINTS OF CITRUS, OFF-DRY</P>
+                <h4>RIESLING-SALMON RUN<span>$12/44</span></h4>
+                <p>(NY) REFRESHING, STONE FRUITS, HINTS OF CITRUS, OFF-DRY</p>
 
-                <H4>ROSE-C’EST LA VIE!<SPAN>$12/44</SPAN></H4>
-                <P>(FR) DRY AND REFRESHING, LIGHT RED BERRIES, FRESH CUT ROSE AND LIGHT HERBS</P>
+                <h4>ROSE-C’EST LA VIE!<span>$12/44</span></h4>
+                <p>(FR) DRY AND REFRESHING, LIGHT RED BERRIES, FRESH CUT ROSE AND LIGHT HERBS</p>
 
-                <H4>SAUVIGNON BLANC-ARONA<SPAN>$12/44</SPAN></H4>
-                <P>(NZ) ZESTY RIPE PASSION FRUIT AND MELON, FRUIT FORWARD, FRESH TEXTURE, CLIPPED GRASS</P>
+                <h4>SAUVIGNON BLANC-ARONA<span>$12/44</span></h4>
+                <p>(NZ) ZESTY RIPE PASSION FRUIT AND MELON, FRUIT FORWARD, FRESH TEXTURE, CLIPPED GRASS</p>
 
-                <H4>VERDICCHIO-LUCCHETTI<SPAN>$14/50</SPAN></H4>
-                <P>(IT) “CASTELLI DI JESI”, WHITE FLOWERS, VIBRANT CITRUS, SALINE MINERALITY, EASY DRINKING</P>
+                <h4>VERDICCHIO-LUCCHETTI<span>$14/50</span></h4>
+                <p>(IT) “CASTELLI DI JESI”, WHITE FLOWERS, VIBRANT CITRUS, SALINE MINERALITY, EASY DRINKING</p>
 
-                <H4>PROSECCO-NINO ARDEVI<SPAN>$11/40</SPAN></H4>
-                <P>(IT) FRESH, CREAMY, PEAR AND GOLDEN APPLE, HINTS OF CITRUS, LIVELY BUBBLES</P>
+                <h4>PROSECCO-NINO ARDEVI<span>$11/40</span></h4>
+                <p>(IT) FRESH, CREAMY, PEAR AND GOLDEN APPLE, HINTS OF CITRUS, LIVELY BUBBLES</p>
 
             </div>
             <div class="menu-section">
                 <!-- RED WINE -->
                 <h3 class="menu-header">RED WINE</h3>
                 <h4>CABERNET SAUV-CARDIFF<span>$11/40</span></h4>
-                <p>(CA) LIGHT BODIED, PLUM, HERBS AND BLACKBERRIES, LIGHT TANNINS</P>
+                <p>(CA) LIGHT BODIED, PLUM, HERBS AND BLACKBERRIES, LIGHT TANNINS</p>
 
                 <h4>CABERNET SAUV-DAOU<span>$15/54</span></h4>
-                <p>(CA) “SPECIAL SELECT”, DARK AND RED FRUITS, FULL-BODIED, SILKY AND SAVORY</P>
+                <p>(CA) “SPECIAL SELECT”, DARK AND RED FRUITS, FULL-BODIED, SILKY AND SAVORY</p>
 
                 <h4>CHIANTI-BADIA AL COLLE<span>$12/46</span></h4>
-                <p>(IT) BRIGHT RED CHERRY, MEDIUM BODIED, DRY, MEDIUM TANNINS</P>
+                <p>(IT) BRIGHT RED CHERRY, MEDIUM BODIED, DRY, MEDIUM TANNINS</p>
 
                 <h4>MALBEC-PARCELEROS<span>$12/45</span></h4>
-                <p>(ARG) MEDIUM BODIED, BLACKBERRY, DARK CHERRY AND COCOA WITH TOBACCO FINISH</P>
+                <p>(ARG) MEDIUM BODIED, BLACKBERRY, DARK CHERRY AND COCOA WITH TOBACCO FINISH</p>
 
                 <h4>MONTEPULCIANO-MONTEFRESCO<span>$11/40</span></h4>
-                <p>(IT) MEDIUM BODIED, RIPE RED FRUIT, HINTS OF SPICE</P>
+                <p>(IT) MEDIUM BODIED, RIPE RED FRUIT, HINTS OF SPICE</p>
 
                 <h4>RED BLEND-LEONE DI CASTRIS<span>$15/55</span></h4>
-                <p>(IT) “MAIANA”, RICH DARK DRY FRUITS, MEDIUM BODIED, HINTS OF SWEET OAK</P>
+                <p>(IT) “MAIANA”, RICH DARK DRY FRUITS, MEDIUM BODIED, HINTS OF SWEET OAK</p>
 
                 <h4>RED BLEND-”PESSIMIST” DAOU<span>$12/46</span></h4>
-                <p>(CA) FULL BODIED, INTENSE DARK FRUIT, POWERFUL, ELEGANT</P>
+                <p>(CA) FULL BODIED, INTENSE DARK FRUIT, POWERFUL, ELEGANT</p>
 
                 <h4>SUPER TUSCAN-ACHILLE<span>$14/48</span></h4>
-                <p>(IT) MEDIUM/FULL BODIED, DARK FRUIT, HERBS, LEATHER, DRY, FIRM TANNINS</P>
+                <p>(IT) MEDIUM/FULL BODIED, DARK FRUIT, HERBS, LEATHER, DRY, FIRM TANNINS</p>
 
                 <h4>SYRAH/VIOGNIER-L’ORANGERAIE<span>$12/42</span></h4>
-                <p>(FR) ROUNDED AND SUPPLE, DARK RASPBERRY, PLUM FRUIT, LIFTED WITH FLORAL NOTES</P>
+                <p>(FR) ROUNDED AND SUPPLE, DARK RASPBERRY, PLUM FRUIT, LIFTED WITH FLORAL NOTES</p>
 
                 <h4>PINOT NOIR-LEESE FITCH<span>$11/40</span></h4>
-                <p>(CA) RIPE FRUIT AROMAS, EXOTIC RED FRUITS, HERBS, HINTS OF FRESH TILLED EARTH</P>
+                <p>(CA) RIPE FRUIT AROMAS, EXOTIC RED FRUITS, HERBS, HINTS OF FRESH TILLED EARTH</p>
 
             </div>
         </div>
@@ -88,49 +88,49 @@ const drinksMenuContent = `
                 <!-- COCKTAILS -->
                 <h3 class="menu-header">COCKTAILS</h3>
                 <h4>APEROL SPRITZ<span>$13</span></h4>
-                <p>APEROL LIQUEUR, PROSECCO, ORANGE PEEL</P>
+                <p>APEROL LIQUEUR, PROSECCO, ORANGE PEEL</p>
 
                 <h4>ENGINE ON THE RUM<span>$13</span></h4>
-                <p>RUM, COCONUT MILK, LIME JUICE, SYMPLE SYRUP</P>
+                <p>RUM, COCONUT MILK, LIME JUICE, SYMPLE SYRUP</p>
 
                 <h4>LIMONCELLO MARTINI<span>$14</span></h4>
-                <p>CITRUS VODKA, HOMEMADE LIMONCELLO, LEMON JUICE, SPLASH OF CLUB SODA, LEMON TWIST</P>
+                <p>CITRUS VODKA, HOMEMADE LIMONCELLO, LEMON JUICE, SPLASH OF CLUB SODA, LEMON TWIST</p>
 
                 <h4>STRAWBERRY MOJITO<span>$12</span></h4>
-                <p>COCONUT RUM, STRAWBERRY PURÉE, LIME JUICE, MINT LEAVES, SPLASH OF CLUB SODA</P>
+                <p>COCONUT RUM, STRAWBERRY PURÉE, LIME JUICE, MINT LEAVES, SPLASH OF CLUB SODA</p>
 
                 <h4>LAST TRAIN TO MOSCOW<span>$12</span></h4>
-                <p>VODKA, RASPBERRY PURÉE, GINGER BEER, FRESH LIME JUICE</P>
+                <p>VODKA, RASPBERRY PURÉE, GINGER BEER, FRESH LIME JUICE</p>
 
                 <h4>SMOKED OLD FASHIONED<span>$14</span></h4>
-                <p>OAK SMOKED, JIM BEAM RYE, BITTERS, SIMPLE SYRUP, AMARENA CHERRY AND ORANGE PEEL</P>
+                <p>OAK SMOKED, JIM BEAM RYE, BITTERS, SIMPLE SYRUP, AMARENA CHERRY AND ORANGE PEEL</p>
 
                 <h4>LAVENDER MARTINI<span>$14</span></h4>
-                <p>VODKA, ELDERFLOWER, LAVENDER LEMONADE</P>
+                <p>VODKA, ELDERFLOWER, LAVENDER LEMONADE</p>
 
                 <h4>POMEGRANATE COSMOPOLITAN<span>$14</span></h4>
-                <p>VODKA, TRIPLE SEC, PAMA LIQUOR, PINEAPPLE JUICE, FRESH LIME</P>
+                <p>VODKA, TRIPLE SEC, PAMA LIQUOR, PINEAPPLE JUICE, FRESH LIME</p>
 
                 <h4>PINEAPPLE TO PARADISE<span>$13</span></h4>
-                <p>PINEAPPLE INFUSED TEQUILA, SIMPLE SYRUP, COINTREAU, HOMEMADE SOUR MIX,TAJIN SPICE RIM</P>
+                <p>PINEAPPLE INFUSED TEQUILA, SIMPLE SYRUP, COINTREAU, HOMEMADE SOUR MIX,TAJIN SPICE RIM</p>
 
                 <h4>THE LOCO-PALOMA<span>$13</span></h4>
-                <p>TEQUILA, JALAPENO, SOUR MIX, TRIPLE SEC, GRAPEFRUIT SODA, HAWAIIAN BLACK SALT RIM</P>
+                <p>TEQUILA, JALAPENO, SOUR MIX, TRIPLE SEC, GRAPEFRUIT SODA, HAWAIIAN BLACK SALT RIM</p>
 
                 <h4>WHISKY SOUR<span>$14</span></h4>
-                <p>TEA INFUSED WHISKEY, HOMEMADE SOUR MIX, AMARENA CHERRY, LEMON PEEL</P>
+                <p>TEA INFUSED WHISKEY, HOMEMADE SOUR MIX, AMARENA CHERRY, LEMON PEEL</p>
 
                 <h4>GIN EXPLORATION<span>$14</span></h4>
-                <p>GIN, LEMON JUICE, ST GERMAIN, MUDDLED CUCUMBER</P>
+                <p>GIN, LEMON JUICE, ST GERMAIN, MUDDLED CUCUMBER</p>
 
                 <h4>THE ORIENT ESPRESSO<span>$14</span></h4>
-                <p>VANILLA VODKA, KAHLUA LIQUEUR, FRESH ESPRESSO, COFFEE BEANS</P>
+                <p>VANILLA VODKA, KAHLUA LIQUEUR, FRESH ESPRESSO, COFFEE BEANS</p>
 
                 <h4>ROSSINI<span>$12</span></h4>
-                <p>STRAWBERRY PURÉE, PROSECCOA</P>
+                <p>STRAWBERRY PURÉE, PROSECCOA</p>
 
                 <h4>FIZZY FREIGHT<span>$13</span></h4>
-                <p>GIN, CHERRY JUICE, LEMON JUICE, PROSECCO</P>
+                <p>GIN, CHERRY JUICE, LEMON JUICE, PROSECCO</p>
             </div>
             <div class="menu-section">
                 <!-- BEER -->
