@@ -103,14 +103,14 @@
 	text-decoration: none;
 	margin: auto;
 	height: 2.1rem;
-	width: 11rem;
+	width: 15rem;
 	text-align: center;
 }
 
 .tabs-header > li.active {
     font-family: "rig-solid-medium-lines", sans-serif;
 	font-weight: 800;
-	font-size: 1.7rem;
+	font-size: 1.6rem;
 }
 
 .tabs-header > li:hover {
