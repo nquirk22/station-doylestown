@@ -50,7 +50,7 @@ Breakpoints: **768px**, **1200px**, **1900px**
 | `main-footer.js`      | `<main-footer>`      | Footer with address, phone, Restaurantji badge    |
 | `menu-allday.js`      | `<menu-allday>`      | All-day menu                                      |
 | `menu-brunch.js`      | `<menu-brunch>`      | Brunch menu                                       |
-| `menu-drinks.js`      | `<menu-drinks>`      | Wine, cocktails, and beer                         |
+| `menu-drinks.js`      | `<menu-drinks>`      | Cocktails, mocktails/ciders, beer, and wine       |
 | `menu-happy-hour.js`  | `<menu-happy-hour>`  | Happy hour and bar snacks                         |
 | `swipe.js`            | —                    | ES6 module — touch swipe detection used by slider |
 
@@ -97,7 +97,7 @@ Breakpoints: **768px**, **1200px**, **1900px**
 
 ## Restaurant Info (used throughout copy and components)
 
-- **Address:** 194 W. Asland Street, Doylestown, PA 18901
+- **Address:** 194 W. Ashland Street, Doylestown, PA 18901
 - **Phone:** 215.348.1663
 - **Hours:** Tue–Thu 11:30am–9pm · Fri–Sat 11:30am–10pm · Sun 10am–9pm · Closed Monday
 - **Bar:** Tue–Sun 11:30am–11pm (or later)
