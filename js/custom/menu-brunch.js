@@ -15,7 +15,7 @@ const brunchMenuContent = `
     <div class="flex-container">
         <!-- LEFT COLUMN -->
         <div class="menu-column">
-            <!-- SHELLFISH & RAW BAR -->
+            <!-- BRUNCH -->
             <div class="menu-section">
                 <h3 class="menu-header">BRUNCH</h3>
 
@@ -32,10 +32,10 @@ const brunchMenuContent = `
                 <p>(1) HOMEMADE WAFFLE, WHIPPED BUTTER, FRESH STRAWBERRY, MAPLE SYRUP, CHOICE OF BACON OR SAUSAGE</p>
 
                 <h4>TRUFFLED EGG FLATBREAD<span>$20</span></h4>
-                <p>(3) SUNNY-SIDE UP EGGS, MOZZARELLA, CRISPY BACON, HASHBROWN, SCALLION, BLACK TUFFLE CREAM</p>
+                <p>(3) SUNNY-SIDE UP EGGS, MOZZARELLA, CRISPY BACON, HASHBROWN, SCALLION, BLACK TRUFFLE CREAM</p>
 
                 <h4>AVOCADO TOAST<span>$15</span></h4>
-                <p>(2) SUNNY-SIDE UP EGGS,MULTIGRAIN SOURDOUGH, AVOCADO SPREAD, ROASTED TOMATO, PICKLED RED ONION, ARUGULA</p>
+                <p>(2) SUNNY-SIDE UP EGGS, MULTIGRAIN SOURDOUGH, AVOCADO SPREAD, ROASTED TOMATO, PICKLED RED ONION, ARUGULA</p>
 
                 <h4>LEMON RICOTTA PANCAKES<span>$17</span></h4>
                 <p>(3) BUTTERMILK PANCAKES, LEMON RICOTTA CREAM, FRESH STRAWBERRY, MAPLE SYRUP, CHOICE OF BACON OR SAUSAGE</p>
@@ -50,10 +50,12 @@ const brunchMenuContent = `
                 <p>BRAISED SHORT RIB, ROASTED BELL PEPPER, MUSHROOM, SHREDDED WHITE AGED CHEDDAR, CHOICE OF BACON OR SAUSAGE</p>
 
             </div>
+
+            <!-- SHELLFISH & RAW BAR -->
             <div class="menu-section">
                 <h3 class="menu-header">SHELLFISH & RAW BAR</h3>
                 <h4>TUNA TARTARE<span>$18</span></h4>
-                <p></p>ARUGULA, SCALLION, SOY, SWEET CHILI PASTE, AVOCADO MOUSSE, CROSTINI</p>
+                <p>ARUGULA, SCALLION, SOY, SWEET CHILI PASTE, AVOCADO MOUSSE, CROSTINI</p>
 
                 <h4>JUMBO SHRIMP COCKTAIL (5)<span>$17</span></h4>
                 <p>WASABI COCKTAIL SAUCE, GRILLED LEMON</p>
@@ -61,9 +63,6 @@ const brunchMenuContent = `
                 <h4>FRESH SHUCKED OYSTERS (6 PC./12 PC.)<span>$18/34</span></h4>
                 <p>CHAMPAGNE MIGNONETTE, HORSERADISH, LEMON, TABASCO</p>
 
-            </div>
-            <div class="menu-section">
-                <h3 class="menu-header">BRUNCH</h3>
             </div>
 
         </div>
@@ -81,4 +80,4 @@ const brunchMenuContent = `
             </div>
         </div>
     </div>
-`
+`;
